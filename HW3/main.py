@@ -7,11 +7,11 @@ import pickle
 k = 2
 b = 0.75
 
-def main(query, dir_data='data.jsonl'): # понизить регистр у запроса
+def main(query, dir_data='data.jsonl'): 
     with open(dir_data, 'r', encoding='utf-8') as f:
         corpus = list(f)[:50000]
     if not os.path.isfile('love_questions.csv'):
-        lem_corpus = create(corpus)  # надо ещё базу по-другому прочитать чтобы сохранять название серии
+        lem_corpus = create(corpus) 
         lem_corpus.to_csv('love_questions.csv')
     else:
         lem_corpus = pd.read_csv('love_questions.csv', index_col=0)
