@@ -1,5 +1,4 @@
 import os
-from nltk.corpus import stopwords
 from tqdm import tqdm
 import pandas as pd
 import json
@@ -10,7 +9,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import pairwise_distances
 from sklearn.metrics.pairwise import cosine_similarity as cosine_similarity
-import argparse
 from model import *
 from creating import *
 import pickle
