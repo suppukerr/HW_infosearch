@@ -1,0 +1,11 @@
+nltk.corpus
+nltk
+tqdm
+pandas
+json
+scipy
+numpy
+sklearn
+pymorphy2
+transformers
+torch
