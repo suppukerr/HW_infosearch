@@ -1,5 +1,4 @@
 import os
-import pymorphy2
 from nltk.corpus import stopwords
 from tqdm import tqdm
 import pandas as pd
